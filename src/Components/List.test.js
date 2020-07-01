@@ -24,4 +24,15 @@ describe ('List', () => {
     it('renders a form', () => {
         expect(wrapper.find('Form').length).toEqual(1);
     });
+
+    describe('adding a bucket list item', () => {
+
+        beforeEach(() => {
+          wrapper.find('.item').simulate('change', { target: { value: 'Kenya' }});
+        });
+    
+        it('updates the bucket list item in the state', () => {
+          expect(wrapper.state().item).toEqual('Kenya');
+        });
+      });
 });

@@ -15,7 +15,12 @@ class List extends Component {
         return (
             <div>
               <div></div>
-              <Form />
+              <Form>
+                  <FormGroup>
+                      <ControlLabel>Bucket List Item</ControlLabel>
+                      <FormLabel onChange={event => this.setState({ item: event.target.value })} className="item" />
+                  </FormGroup>
+              </Form>
             </div>
         )
     }

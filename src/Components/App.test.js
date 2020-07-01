@@ -26,4 +26,6 @@ describe('App', () => {
     wrapper.find('.add-item').simulate('click');
     expect(wrapper.find('.rendered-list').children().length).toEqual(1);
   });
+
+ 
 });
