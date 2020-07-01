@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
 
-class Item extends Component {
+class List extends Component {
 
     constructor() {
         super()
+
+        this.state = { bucketListItem: '' }
     };
 
 
@@ -16,4 +18,4 @@ class Item extends Component {
 }
 
 
-export default Item;
+export default List;
