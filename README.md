@@ -2,7 +2,7 @@
 
 # Bucket List
 
-I thought that I would taken inspiration from the Bucket List application that I built previously (whose functionality is more limited than this), and build another, this time using the test driven development process.
+I thought that I would taken inspiration from the Bucket List application that I built previously: https://github.com/emilyjspencer/Bucket-List (whose functionality is more limited than this), and build another, this time using the test driven development process.
 
 ### How to use:
 
