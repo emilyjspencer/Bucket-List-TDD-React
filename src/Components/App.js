@@ -25,6 +25,17 @@ class App extends Component {
 
     return (
       <div className="App">
+        <div className="rendered-list">
+          {
+            this.state.items.map(item => {
+              return (
+                <div>
+                  Item added to your bucket list!
+                </div>
+              )
+            })
+          }
+        </div>
       <Button 
         onClick={this.addItem} 
         className="add-item"
