@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Form, FormGroup, FormLabel, ControlLabel, Button } from 'react-bootstrap';
 
 
 class List extends Component {
@@ -12,7 +13,10 @@ class List extends Component {
 
     render() {
         return (
-            <div></div>
+            <div>
+              <div></div>
+              <Form />
+            </div>
         )
     }
 }
