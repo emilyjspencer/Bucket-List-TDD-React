@@ -27,11 +27,7 @@ class App extends Component {
 
     const { items } = this.state;
 
-    const ids = this.state.items.map(item => item.id);
-
-    const max_id = ids.length > 0 ? Math.max(...ids) : 0;
-
-    items.pop({ id: max_id })
+    const ids = this.state.items.filter(item => item.id !== item.id);
 
     this.setState({ items });
 
