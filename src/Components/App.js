@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import Item from './Item';
+import Header from './Header';
 import { max_number } from '../helpers';
 
 class App extends Component {
@@ -36,6 +37,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <Header />
         <h1>My Bucket List</h1>
         <div className="rendered-list">
           {

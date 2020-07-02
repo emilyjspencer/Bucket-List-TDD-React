@@ -17,6 +17,10 @@ describe('App', () => {
     expect(wrapper.find('div').length).toEqual(2);
   });
 
+  it('renders a Header', () => {
+    expect(wrapper.find('Header').length).toEqual(1);
+  });
+
   it('is initialized with an empty array', () => {
     expect(wrapper.state().items).toEqual([]);
   });
