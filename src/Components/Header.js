@@ -1,10 +1,11 @@
 import React from 'react';
+import Image from "./river.png"
 
 const Header = () => {
 
     return (
         <div>
-            Hi
+            <img src={Image} />
         </div>
     )
 }

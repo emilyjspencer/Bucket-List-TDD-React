@@ -32,3 +32,6 @@ The application will open automatically in the browser
 * Jest
 
 ### What it looks like:
+
+![bucketlist](bucket_list.png)
+![bucketlist](add_item.png)
