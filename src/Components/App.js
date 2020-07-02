@@ -22,6 +22,21 @@ class App extends Component {
     this.setState({ items });
   }
 
+
+  removeItem = () => {
+
+    const { items } = this.state;
+
+    const ids = this.state.items.map(item => item.id);
+
+    const max_id = ids.length > 0 ? Math.max(...ids) : 0;
+
+    items.pop({ id: max_id })
+
+    this.setState({ items });
+
+  }
+
   render() {
 
     return (

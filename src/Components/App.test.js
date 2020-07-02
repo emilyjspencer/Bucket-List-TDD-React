@@ -17,7 +17,7 @@ describe('App', () => {
     expect(wrapper.state().items).toEqual([]);
   });
 
-  describe('adding the add-item button', () => {
+  describe('clicking the add-item button', () => {
  
       beforeEach(() => {
         wrapper.find('.add-item').simulate('click')
@@ -34,6 +34,19 @@ describe('App', () => {
     it('creates an instance of the Item component ', () => {
       expect(wrapper.find('Item').exists()).toBe(true);
     });
+  });
+
+  describe('clicking the remove-item button', () => {
+
+    beforeEach(() => {
+      wrapper.instance().removeItem(1);
+    });
+
+    it('removes the bucket list item from the component state', () => {
+      expect(wrapper.state().items).toEqual([]);
+    });
+
+
   });
 
  
