@@ -49,8 +49,6 @@ describe('App', () => {
     it('removes the bucket list item from the component state', () => {
       expect(wrapper.state().items).toEqual([]);
     });
-
-
   });
 
  
