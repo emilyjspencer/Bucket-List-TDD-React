@@ -24,9 +24,9 @@ class App extends Component {
   }
 
 
-  removeItem = () => {
+  removeItem = (id) => {
 
-    const items = this.state.items.filter(item => item.id !== item.id);
+    const items = this.state.items.filter(item => item.id !== id);
 
     this.setState({ items });
 
@@ -36,12 +36,12 @@ class App extends Component {
 
     return (
       <div className="App">
+        <h1>My Bucket List</h1>
         <div className="rendered-list">
           {
             this.state.items.map(item => {
               return (
                 <div>
-                  Item added to your bucket list!
                   <Item key={item.id}
                   item={item}
                   removeItem={this.removeItem} />

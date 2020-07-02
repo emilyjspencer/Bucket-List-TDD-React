@@ -13,7 +13,7 @@ class Item extends Component {
 
     render() {
         return (
-            <div>
+            <div className="item">
               <div></div>
               <Form>
                   <FormGroup>
