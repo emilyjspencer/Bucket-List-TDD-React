@@ -17,14 +17,23 @@ describe('App', () => {
     expect(wrapper.state().items).toEqual([]);
   });
 
-  it('adds a bucket list item to the items array, not rendered list ', () => {
-    wrapper.find('.add-item').simulate('click');
-    expect(wrapper.state().items).toEqual([{ id: 1}]);
-  });
+  describe('adding the add-item button', () => {
+ 
+      beforeEach(() => {
+        wrapper.find('.add-item').simulate('click')
+      });
 
-  it('adds a bucket list item to the items array - rendered list', () => {
-    wrapper.find('.add-item').simulate('click');
-    expect(wrapper.find('.rendered-list').children().length).toEqual(1);
+    it('adds a bucket list item to the items array, not rendered list ', () => {
+    expect(wrapper.state().items).toEqual([{ id: 1}]);
+    });
+
+    it('adds a bucket list item to the items array - rendered list', () => {
+      expect(wrapper.find('.rendered-list').children().length).toEqual(1);
+    });
+
+    it('creates an instance of the List component ', () => {
+      expect(wrapper.find('List').exists()).toBe(true);
+    });
   });
 
  

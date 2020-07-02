@@ -18,7 +18,7 @@ describe ('List', () => {
     });
 
     it('initializes a bucket list item in the List state', () => {
-        expect(wrapper.state()).toEqual({ bucketListItem: '' })    
+        expect(wrapper.state()).toEqual({ item: '' })    
     });
 
     it('renders a form', () => {

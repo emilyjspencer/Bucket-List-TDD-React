@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, FormGroup, FormLabel, ControlLabel, Button } from 'react-bootstrap';
+import { Form, FormGroup, FormLabel, FormControl, Button } from 'react-bootstrap';
 
 
 class List extends Component {
@@ -7,7 +7,7 @@ class List extends Component {
     constructor() {
         super()
 
-        this.state = { bucketListItem: '' }
+        this.state = { item: '' }
     };
 
 
@@ -17,8 +17,8 @@ class List extends Component {
               <div></div>
               <Form>
                   <FormGroup>
-                      <ControlLabel>Bucket List Item</ControlLabel>
-                      <FormLabel onChange={event => this.setState({ item: event.target.value })} className="item" />
+                      <FormLabel>Bucket List Item</FormLabel>
+                      <FormControl onChange={event => this.setState({ item: event.target.value })} className="item" />
                   </FormGroup>
               </Form>
             </div>
