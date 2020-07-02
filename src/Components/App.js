@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
-import List from './List';
+import Item from './Item';
 
 class App extends Component {
 
@@ -32,7 +32,7 @@ class App extends Component {
               return (
                 <div>
                   Item added to your bucket list!
-                  <List key={item.id} />
+                  <Item key={item.id} />
                 </div>
               )
             })

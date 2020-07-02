@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Form, FormGroup, FormLabel, FormControl, Button } from 'react-bootstrap';
 
 
-class List extends Component {
+class Item extends Component {
 
     constructor() {
         super()
@@ -27,4 +27,4 @@ class List extends Component {
 }
 
 
-export default List;
+export default Item;

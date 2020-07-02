@@ -31,8 +31,8 @@ describe('App', () => {
       expect(wrapper.find('.rendered-list').children().length).toEqual(1);
     });
 
-    it('creates an instance of the List component ', () => {
-      expect(wrapper.find('List').exists()).toBe(true);
+    it('creates an instance of the Item component ', () => {
+      expect(wrapper.find('Item').exists()).toBe(true);
     });
   });
 

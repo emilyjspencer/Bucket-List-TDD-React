@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import List from './List';
+import Item from './Item';
 
 
-describe ('List', () => {
+describe ('Item', () => {
 
     let wrapper; 
 
-    beforeEach(() => wrapper = shallow(<List />));
+    beforeEach(() => wrapper = shallow(<Item />));
 
     it('renders correctly', () => {
         expect(wrapper).toMatchSnapshot();
