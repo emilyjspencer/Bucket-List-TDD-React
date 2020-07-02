@@ -5,9 +5,13 @@ import Item from './Item';
 
 describe ('Item', () => {
 
+    const mockRemoveItem = jest.fn();
+    const id = 1;
+    const props = { item: { id}, removeItem: mockRemoveItem };
+
     let wrapper; 
 
-    beforeEach(() => wrapper = shallow(<Item />));
+    beforeEach(() => wrapper = shallow(<Item {...props} />));
 
     it('renders correctly', () => {
         expect(wrapper).toMatchSnapshot();
@@ -33,6 +37,17 @@ describe ('Item', () => {
     
         it('updates the bucket list item in the state', () => {
           expect(wrapper.state().item).toEqual('Kenya');
+        });
+      });
+
+      describe('removing a bucket list item with the remove-button', () => {
+
+        beforeEach(() => {
+          wrapper.find('.remove-button').simulate('click');
+        });
+
+        it('the removeItem callback is called when the button is clicked', () => {
+          expect(mockRemoveItem).toHaveBeenCalledWith(id);
         });
       });
 });

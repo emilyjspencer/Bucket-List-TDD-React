@@ -25,9 +25,7 @@ class App extends Component {
 
   removeItem = () => {
 
-    const { items } = this.state;
-
-    const ids = this.state.items.filter(item => item.id !== item.id);
+    const items = this.state.items.filter(item => item.id !== item.id);
 
     this.setState({ items });
 
@@ -43,7 +41,9 @@ class App extends Component {
               return (
                 <div>
                   Item added to your bucket list!
-                  <Item key={item.id} />
+                  <Item key={item.id}
+                  item={item}
+                  removeItem={this.removeItem} />
                 </div>
               )
             })

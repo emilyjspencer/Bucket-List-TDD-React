@@ -21,6 +21,11 @@ class Item extends Component {
                       <FormControl onChange={event => this.setState({ item: event.target.value })} className="item" />
                   </FormGroup>
               </Form>
+              <Button
+                className="remove-button"
+                onClick={() => this.props.removeItem(this.props.item.id)}
+                >Remove Item
+                </Button>
             </div>
         )
     }
