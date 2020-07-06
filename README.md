@@ -35,3 +35,5 @@ The application will open automatically in the browser
 
 ![bucketlist](bucket_list.png)
 ![bucketlist](add_item.png)
+
+Deployed with Surge at: wealthy-cover.surge.sh
