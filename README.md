@@ -4,6 +4,8 @@
 
 I thought that I would take inspiration from the Bucket List application that I built previously: https://github.com/emilyjspencer/Bucket-List (whose functionality is more limited than this), and build another, this time using the test driven development process.
 
+**Bucket List** is deployed with **Surge** at: [this link](http://wealthy-cover.surge.sh/)!
+
 ### How to use:
 
 * Clone this repo:
@@ -36,4 +38,4 @@ The application will open automatically in the browser
 ![bucketlist](bucket_list.png)
 ![bucketlist](add_item.png)
 
-Deployed with Surge at: wealthy-cover.surge.sh
+### Deployed with Surge at: [this link](http://wealthy-cover.surge.sh/)!
